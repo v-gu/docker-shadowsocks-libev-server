@@ -17,10 +17,8 @@ fi
 
 echo "Starting Shadowsocks-libev in server mode ..."
 exec ss-server \
-     -s ${SS_SERVER_TARGET_ADDR} \
-     -p ${SS_SERVER_TARGET_PORT} \
-     -b ${SS_SERVER_LISTEN_ADDR} \
-     -l ${SS_SERVER_LISTEN_PORT} \
+     -s ${SS_SERVER_LISTEN_ADDR} \
+     -p ${SS_SERVER_LISTEN_PORT} \
      -k ${SS_PASSWORD} \
      -t ${SS_TIMEOUT} \
      -m ${SS_METHOD} \
