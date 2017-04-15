@@ -5,7 +5,7 @@
 FROM lisnaz/shadowsocks-libev
 MAINTAINER Vincent Gu <g@v-io.co>
 
-ENV SS_SERVER_LISTEN_ADDR      127.0.0.1
+ENV SS_SERVER_LISTEN_ADDR      0.0.0.0
 ENV SS_SERVER_LISTEN_PORT      8388
 
 # define service ports
